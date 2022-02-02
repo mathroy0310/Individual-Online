@@ -273,6 +273,11 @@ html.is-animating .transition-fade{
 .logo{
     width: 600px;
 }
+@media screen and (max-width: 600px) {
+    .logo{
+        width: 200px;
+    }
+  }
 
 .svg{
     margin-top: 2rem;
