@@ -46,10 +46,11 @@ a {
     margin: 0;
     z-index: 10;
 }
-.logo img {
+.logo img:not(.svg) {
     display: block;
     height: 6rem;
     width: auto;
+    margin: 1rem auto;
 }
 
 ul, li {
@@ -257,5 +258,26 @@ html.is-animating .transition-fade{
 
 .description{
 
-    margin-bottom;2000px
+    margin-bottom:2000px;
 }
+
+.logo h1,h2,p{
+    text-align: center;
+    color: white;   
+}
+
+.logo h1{
+    font-size: 50px;
+}
+
+.logo{
+    width: 600px;
+}
+
+.svg{
+    margin-top: 2rem;
+    width: 20px;
+    height: auto;
+}
+
+
