@@ -24,7 +24,6 @@ body {
 
 main{
     padding-top: 4rem;
-    margin-top:7.5rem;
     background-image: url(../img/bg4.jpg);
     /* background: linear-gradient(-45deg, #222222, #2c2c2c, #707070, #1f1f1f); */
 	background-size: 100% 100%;
@@ -310,4 +309,8 @@ figure{
     
 
 
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
