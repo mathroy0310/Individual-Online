@@ -21,8 +21,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(10, 10, 10) 50%, rgba(0,0,0,1) 100%);
     font-family: monospace;
 }
 a {
@@ -293,6 +291,6 @@ html.is-animating .transition-fade{
     padding-left: 3rem;
     padding-right: 3rem;
 }
-.logo a{
-    background-color: tomato;
+.logo a p{
+    padding-bottom: 2rem;
 }

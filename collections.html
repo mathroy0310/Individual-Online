@@ -8,10 +8,26 @@
     <link rel="icon" href="Icon.ico" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Mathieu Roy">
-    <title>individual. - Collection</title>
+    <title>individual. - Collections</title>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <link rel="stylesheet" href="styles/stylesGlobales.css"/>
     <link rel="stylesheet" href="styles/stylesCollection.css"/>
+
+
+
+    
+    <meta property="og:title" content="INDIVIDUAL.">
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://i.imgur.com/XJdufhX.png">
+<meta property="og:image:type" content="image/png">
+<meta data-rh="true" property="og:image:width" content="undefined">
+<meta data-rh="true" property="og:image:height" content="undefined">
+<meta property="og:url" content="http://individual-clothing-qc.com/index.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:description" content="Premium Clothing made with intent to last.">
+<meta property="og:site_name" content="individual clothing">
+<meta name="twitter:image:alt" content="welcome to individual.">
+
 </head>
 
 <div class="loader">
@@ -26,10 +42,24 @@ window.addEventListener("load", function () {
     loader.className += " hidden"; // class "loader hidden"
 });
 
+
 </script>
+<script type="text/javascript">
+  document.addEventListener("click", e =>{
+    const isDropdownButton = e.target.matches("[data-dropdown-button]")
+    if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return
+    let currentDropdown
+    if (isDropdownButton) {
+        currentDropdown = e.target.closest('[data-dropdown]')
+        currentDropdown.classList.toggle('active')
+    }
+    document.querySelectorAll("[data-dropdown].active").forEach(dropdown =>{
+        if (dropdown === currentDropdown)return 
+        dropdown.classList.remove('active')  
+    })
+})
 
-
-
+</script>
 <header>
 
     <nav class="nav nav--left">
@@ -50,93 +80,82 @@ window.addEventListener("load", function () {
       <figure class="logo">
         <img src="img/logo.png">
       </figure>
-      
-      <nav class="nav nav--right">
-        <ul>
-          <li>
-           
-          </li>
-          <li>
-            <!-- <a href="#">
-              <span>Cart</span>
-              <div class="cart-total">0</div>
-            </a> -->
-          </li>
-        </ul>
-      </nav>
-    </header>
+</header>
+<main>
+
+  <body>
+    <div class="container">
+      <!-- <br>
+      <div class="cathegories">
+        <div class="btn"><a>HOODIES</a></div>
+        <div class="btn"><a>TSHIRT</a></div>
+        <div class="btn"><a>CREWNECK</a></div>
+      </div> -->
+        <section>
+          <h1>première collection</h1>
+          <div class="grid">
+            <div style="background-image: url(linge/Crewneck/prototype1_.png)" class="card case1">
+              <div class="card-content">
+              <h2 class="card-title">Crewneck</h2>
+              <p class="card-body">Lorem ipsum
+                   dolor sit amet consectetur adipisicing elit.
+                    Dolore commodi enim tenetur. Id, magni deserunt ab fugiat.</p>
+              <a href="rickdog.html" class="button">Learn More</a>
+              </div>
+          </div>
+          <div style="background-image: url(linge/t-shirt/prototype10.png)" class="card case2">
+            <div class="card-content">
+            <h2 class="card-title">TSHIRT</h2>
+            <p class="card-body">Lorem ipsum
+                 dolor sit amet consectetur adipisicing elit.
+                  Dolore commodi enim tenetur. Id, magni deserunt ab fugiat.</p>
+            <a href="rickdog.html" class="button">Learn More</a>
+            </div>
+        </div>
+        <div style="background-image: url(linge/Knitted\ Sweater/knit_sweater_prot.png)" class="card case3">
+          <div class="card-content">
+          <h2 class="card-title">Knitted Sweater</h2>
+          <p class="card-body">Lorem ipsum
+               dolor sit amet consectetur adipisicing elit.
+                Dolore commodi enim tenetur. Id, magni deserunt ab fugiat.</p>
+          <a href="rickdog.html" class="button">Learn More</a>
+          </div>
+      </div>
+          </div>
+        </section>
+
+        <br><br><br>
+
+        <!-- <section>
+          <h1>prochaine<br>collection</h1>
+          <div class="grid">
+            <div style="background-image: url(linge)" class="card case1" >
+              <div class="card-content">
+              <h2 class="card-title">prochainement...</h2>
+              <p class="card-body">design might change this is only a preview</p>
+              <a href="rickdog.html" class="button">Precommander</a>
+              </div>
+          </div>
+          <div style="background-image: url()" class="card case2">
+            <div class="card-content">
+            <h2 class="card-title">prochainement...</h2>
+            <p class="card-body">design might change this is only a preview</p>
+            <a href="rickdog.html" class="button">Precommander</a>
+            </div>
+        </div>
+        <div style="background-image: url()" class="card case3">
+          <div class="card-content">
+              <h2 class="card-title">prochainement...</h2>
+              <p class="card-body">design might change this is only a preview</p>
+          <a href="rickdog.html" class="button">Precommander</a>
+          </div>
+      </div>
+          </div>
+        </section> -->
+    </div>
+  </body>
 
 
-<body>
 
+</main>
 
-  <div class="card-container">
-    <div style="background-image: url(../Linge\ Design/T-shirt/prototype10/prototype10.png);" class="card">
-        <div class="card-content">
-        <h2 class="card-title">T-Shirt</h2>
-        <p class="card-body">Lorem ipsum
-             dolor sit amet consectetur adipisicing elit.
-              Dolore commodi enim tenetur. Id, magni deserunt ab fugiat.</p>
-        <a href="collection-page/t-shirt/T-shirt.html" class="button">Learn More</a>
-        </div>
-    </div>
-  </div>
-  <div class="card-container">
-    <div style="background-image: url(../Linge\ Design/Longsleeve/mob/Longsleeve.png);" class="card">
-        <div class="card-content">
-        <h2 class="card-title">ni</h2>
-        <p class="card-body">Lorem ipsum
-             dolor sit amet consectetur adipisicing elit.
-              Dolore commodi enim tenetur. Id, magni deserunt ab fugiat.</p>
-        <a href="rickdog.html" class="button">Learn More</a>
-        </div>
-    </div>
-  </div>
-  <div class="card-container">
-    <div style="background-image: url(../Linge\ Design/Longsleeve/Longsleeve\ grisâtre.png);" class="card">
-        <div class="card-content">
-        <h2 class="card-title">Alone - Longsleeve</h2>
-        <p class="card-body">It is not acceptable to put the responsibility onto the individual alone...<br>
-             Click 'Learn More' for more pictures and the details of the product</p>
-        <a href="collection-page/longsleeve/LongSleeveAlone.html" class="button">Learn More</a>
-        </div>
-    </div>
-  </div>  
-  
-<!-- 
-  <div class="card-container">
-    <div style="background-image: url(../Linge\ Design/Hoodie/Prototype3/Prototype3.png);" class="card">
-        <div class="card-content">
-        <h2 class="card-title">Hoodie</h2>
-        <p class="card-body">Lorem ipsum
-             dolor sit amet consectetur adipisicing elit.
-              Dolore commodi enim tenetur. Id, magni deserunt ab fugiat.</p>
-        <a href="rickdog.html" class="button">Learn More</a>
-        </div>
-    </div>
-  </div>
-  <div class="card-container">
-    <div style="background-image: url(../Linge\ Design/Hoodie/Prototype4/Prototype4.png);" class="card">
-        <div class="card-content">
-        <h2 class="card-title">lui a moi et co :)</h2>
-        <p class="card-body">Lorem ipsum
-             dolor sit amet consectetur adipisicing elit.
-              Dolore commodi enim tenetur. Id, magni deserunt ab fugiat.</p>
-        <a href="rickdog.html" class="button">Learn More</a>
-        </div>
-    </div>
-  </div>
-  <div class="card-container">
-    <div style="background-image: url(../Linge\ Design/T-Shirt/prototype9/prototype9.png);" class="card">
-        <div class="card-content">
-        <h2 class="card-title">Alone - Longsleeve</h2>
-        <p class="card-body">It is not acceptable to put the responsibility onto the individual alone...<br>
-             Click 'Learn More' for more pictures and the details of the product</p>
-        <a href="collection-page/Alone-Longsleeve/LongSleeveAlone.html" class="button">Learn More</a>
-        </div>
-    </div>
-  </div>   -->
-  
-
-
-</body>
