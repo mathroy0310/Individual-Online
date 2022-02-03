@@ -273,6 +273,14 @@ figure{
     main{
         background-image: url(../img/bgtest.jpg);
     }
+
+    .home{
+        opacity: 0;
+    }
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
       
   }
 
