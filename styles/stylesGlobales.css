@@ -183,7 +183,6 @@ html.is-animating .transition-fade{
     padding: 0.5em 1.25em;
     display:inline-block;
     box-sizing:border-box;
-    position:relative;
     overflow:hidden;
     transition:all 200ms ease-in;
     border-radius:0.25em;
